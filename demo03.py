@@ -24,3 +24,21 @@ for i in range(1,10):
     for j in range(1,i+1):
         print(j,"*",i,"=",i*j,end=" ")
     print()
+#模拟红绿灯功能，红灯30次，黄灯3次，绿灯35次
+light={
+    "红灯":30,
+    "绿灯":35,
+    "黄灯":3
+}
+for i in light:
+    for j in range(light[i]):
+        print(i,"倒计时还有",light[i]-j,"秒")
+
+
+# 跳出循环
+#continue -- 停止本轮循环，进行下一轮循环
+for i in range(10):
+    if i==4:
+        continue
+    print(i)
+#break -- 跳出最近一层的循环
