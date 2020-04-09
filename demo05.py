@@ -4,7 +4,7 @@ try:
 except:
     print("出问题了")
 
-#异常类
+#异常类  定位问题
 try:
     print(2+jdfg)
 except Exception as e:
